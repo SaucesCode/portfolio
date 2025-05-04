@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Patrick De Mesa | Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,202 +12,195 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Responsive Portfolio Website</title>
   </head>
   <body>
-    <!--NAVIGATION HERE-->
-    <header>
-      <div class="logo">Sauce</div>
+    <header class="header">
+      <a href="#home" class="logo">James Patrick</a>
       <i class="fa-solid fa-bars" id="menu-icon"></i>
       <nav class="navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#home" class="active">Home</a> <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contacts</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a href="#" class="download-btn">Download CV</a>
     </header>
 
-    <!-- HOME SECTION -->
     <section class="home" id="home">
       <div class="home-content">
-        <h2>Hi, I am</h2>
-        <h1>James Patrick I. De Mesa</h1>
-        <h2>and I'm a <span class="type-text"></span></h2>
+        <h3>Hello, I am</h3>
+        <h1>James Patrick De Mesa</h1>
+        <h3>and I'm a <span class="type-text"></span></h3>
         <p>
-          Hello! I'm an enthusiastic IT student at Dalubhasaan ng Lungsod ng
-          Lucena with a passion for web development. My journey in the world of
-          technology has been driven by a curiosity to understand how things
-          work and a desire to create intuitive and dynamic web experiences. I
-          am dedicated to honing my skills in front-end and back-end
-          development, and I'm excited about the endless possibilities in the
-          field of web development. Through my projects, I aim to blend
-          creativity with technical expertise to build user-friendly and
-          innovative web solutions. Welcome to my portfolio, and thank you for
-          visiting!
+          IT student at Dalubhasaan ng Lungsod ng Lucena with a passion for creating intuitive
+          and dynamic web experiences. Welcome to my portfolio.
         </p>
-        <a href="#about">
-          <button class="direct-btn">
-            About Me <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </a>
-      </div>
-      <div class="home-img">
-        <img src="image1.jpg" alt="profile" />
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="image2.jpg" alt="profile" />
-      </div>
-      <div class="about-info">
-        <h1>About Me</h1>
-        <h2><span>IT Student</span></h2>
-        <p>
-          Hello! I'm James Patrick I. De Mesa, a 20-year-old IT student in my
-          third year at Dalubhasaan ng Lungsod ng Lucena with a passion for web
-          development. I love learning new things about web technologies and
-          have gained skills in HTML, CSS, JavaScript, and Python. I aspire to
-          become a full-stack web developer, continuously improving my skills
-          and contributing to innovative projects. Feel free to reach out to me
-          at
-          <a href="mailto:jamessdemesa@gmail.com" style="color: white"
-            >jamessdemesa@gmail.com </a
-          >or connect with me on my social media accounts. Welcome to my
-          portfolio, and thank you for visiting!
-        </p>
-        <span>Specialized in:</span>
-        <div class="icons-container">
-          <img src="html.png" alt="html" />
-          <img src="css-3.png" alt="css" />
-          <img src="js.png" alt="js" />
-          <img src="python.png" alt="python" />
-          <img src="photoshop.png" alt="ps" />
-          <a href="#portfolio"
-            ><button>Portfolio <i class="fa-solid fa-arrow-right"></i></button
+        <div class="social-media-home">
+          <a
+            href="https://www.facebook.com/okayyyyyJames"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/jmsptrck16_/"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com/jmsptrck16" target="_blank" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://github.com/SaucesCode" target="_blank" aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
           ></a>
         </div>
+        <a href="#portfolio" class="btn">View My Work</a>
+      </div>
+      <div class="home-img">
+        <img src="images/image1.jpg" alt="James Patrick De Mesa Profile Picture" />
       </div>
     </section>
 
-    <!-- PORFOLIO SECTION -->
-    <section class="portfolio" id="portfolio">
-      <h1><span>Portfolio</span>/Projects</h1>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/image2.jpg" alt="James Patrick De Mesa working" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>IT Student & Aspiring Web Developer</h3>
+        <p>
+          I'm a 20-year-old IT student at Dalubhasaan ng Lungsod ng Lucena, specializing in web
+          development. I enjoy learning new technologies and building projects with HTML, CSS,
+          JavaScript, and Python. My goal is to create user-friendly and impactful web
+          solutions.
+        </p>
+        <h4>Key Skills:</h4>
+        <div class="skills-list">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript (ES6+)</span>
+          <span>Python</span>
+          <span>Photoshop</span>
+          <span>Responsive Design</span>
+        </div>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
 
-      <div class="portfolio-whole">
-        <div class="portfolio-container">
-          <img src="calculator.png" alt="" />
-          <div class="portfolio-dtls">
-            <h2>Calculator</h2>
-            <div class="portfolio-link">
-              <a
-                href="https://github.com/SaucesCode/calculator-app"
-                target="_blank"
-                >Code <i class="fa-solid fa-link"></i
-              ></a>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/calculator.png" alt="Calculator Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Calculator App</h4>
+            <p>A functional calculator built with vanilla JavaScript.</p>
+            <div class="portfolio-links">
               <a
                 href="https://saucescode.github.io/calculator-app/"
                 target="_blank"
-                >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+                aria-label="View Demo"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SaucesCode/calculator-app"
+                target="_blank"
+                aria-label="View Code"
+                ><i class="fa-brands fa-github"></i> Code</a
+              >
             </div>
           </div>
         </div>
-
-        <div class="portfolio-container">
-          <img src="rock-paper-scissor.png" alt="" />
-          <div class="portfolio-dtls">
-            <h2>Rock Paper Scissor</h2>
-            <div class="portfolio-link">
-              <a
-                href="https://github.com/SaucesCode/Rock-Paper-Scissor"
-                target="_blank"
-                >Code <i class="fa-solid fa-link"></i
-              ></a>
+        <div class="portfolio-box">
+          <img
+            src="images/rock-paper-scissor.png"
+            alt="Rock Paper Scissor Project Screenshot"
+          />
+          <div class="portfolio-layer">
+            <h4>Rock Paper Scissors</h4>
+            <p>Classic game implemented with JavaScript logic.</p>
+            <div class="portfolio-links">
               <a
                 href="https://saucescode.github.io/Rock-Paper-Scissor/"
                 target="_blank"
-                >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+                aria-label="View Demo"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SaucesCode/Rock-Paper-Scissor"
+                target="_blank"
+                aria-label="View Code"
+                ><i class="fa-brands fa-github"></i> Code</a
+              >
             </div>
           </div>
         </div>
-
-        <div class="portfolio-container">
-          <img src="resume.png" alt="" />
-          <div class="portfolio-dtls">
-            <h2>Online Resume</h2>
-            <div class="portfolio-link">
-              <a
-                href="https://github.com/SaucesCode/online-resume"
-                target="_blank"
-                >Code <i class="fa-solid fa-link"></i
-              ></a>
+        <div class="portfolio-box">
+          <img src="images/resume.png" alt="Online Resume Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Online Resume</h4>
+            <p>A responsive online CV created with HTML & CSS.</p>
+            <div class="portfolio-links">
               <a
                 href="https://saucescode.github.io/online-resume/"
                 target="_blank"
-                >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+                aria-label="View Demo"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SaucesCode/online-resume"
+                target="_blank"
+                aria-label="View Code"
+                ><i class="fa-brands fa-github"></i> Code</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- CONTACT SECTION  -->
+
     <section class="contact" id="contact">
-      <h1>Contact <span>Me</span></h1>
-      <div class="contact-contents">
-        <div class="social-media">
-          <a href="https://www.facebook.com/okayyyyyJames" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/jmsptrck16_/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="tel:+639512428826" target="_blank"
-            ><i class="fa-solid fa-phone"></i
-          ></a>
-          <a href="https://x.com/jmsptrck16" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="mailto:jamessdemesa@gmail.com" method="get" enctype="text/plain">
+        <div class="input-box">
+          <input type="text" name="Full Name" placeholder="Full Name" required />
+          <input type="email" name="Email" placeholder="Email Address" required />
         </div>
-        <form action="mailto:jamessdemesa@gmail.com" method="get">
-          <div class="input-form">
-            <input type="text" placeholder="Full Name" required />
-            <input type="text" placeholder="Email Address" required />
-          </div>
-          <div class="input-form">
-            <input type="number" placeholder="Contact Number" required />
-            <input type="text" placeholder="Email Subject" required />
-          </div>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <input type="submit" value="Send Message" class="submit-btn" />
-        </form>
+        <div class="input-box">
+          <input type="tel" name="Contact Number" placeholder="Contact Number" />
+          <input type="text" name="Subject" placeholder="Email Subject" required />
+        </div>
+        <textarea
+          name="Message"
+          cols="30"
+          rows="8"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+      <div class="contact-info">
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:jamessdemesa@gmail.com">jamessdemesa@gmail.com</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i> <a href="tel:+639512428826">+63 951 242 8826</a>
+        </p>
+        <p><i class="fa-solid fa-location-dot"></i> Lipa City, Batangas, Philippines</p>
       </div>
     </section>
-    <!-- FOOTER  -->
-    <footer>
-      <p>Copyright &copy; 2024 by @jmsptrick_ | All Rights Reserved.</p>
-      <div class="top-icon">
-        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by James Patrick De Mesa | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home" aria-label="Scroll to Top"><i class="fa-solid fa-angle-up"></i></a>
       </div>
     </footer>
 
-    <!-- SCROLL REVEAL js -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- TYPE JS  -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- JAVASCRIPT  -->
     <script src="script.js"></script>
   </body>
 </html>
